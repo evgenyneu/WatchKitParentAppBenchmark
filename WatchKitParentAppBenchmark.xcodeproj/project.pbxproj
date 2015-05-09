@@ -21,6 +21,9 @@
 		7EBDAC5D1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EBDAC451AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7EBDAC661AFD8BEC0089B815 /* WatchkitCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC651AFD8BEC0089B815 /* WatchkitCommunicator.swift */; };
 		7EBDAC691AFD8E200089B815 /* TickTock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC681AFD8E200089B815 /* TickTock.swift */; };
+		7EBDACF61AFDACEE0089B815 /* SwiftStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */; };
+		7EBDACF81AFDAD2B0089B815 /* SwiftStatistics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7EBDACFB1AFDAD520089B815 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDACFA1AFDAD520089B815 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EBDACF91AFDAD2B0089B815 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EBDACF81AFDAD2B0089B815 /* SwiftStatistics.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +96,8 @@
 		7EBDAC591AFD8AC30089B815 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7EBDAC651AFD8BEC0089B815 /* WatchkitCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchkitCommunicator.swift; sourceTree = "<group>"; };
 		7EBDAC681AFD8E200089B815 /* TickTock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTock.swift; sourceTree = "<group>"; };
+		7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftStatistics.framework; path = Carthage/Build/iOS/SwiftStatistics.framework; sourceTree = SOURCE_ROOT; };
+		7EBDACFA1AFDAD520089B815 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EBDACF61AFDACEE0089B815 /* SwiftStatistics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +129,8 @@
 		7EBDAC131AFD8A200089B815 = {
 			isa = PBXGroup;
 			children = (
+				7EBDACFA1AFDAD520089B815 /* Cartfile */,
+				7EBDACEF1AFDABFF0089B815 /* Frameworks */,
 				7EBDAC1E1AFD8A200089B815 /* WatchKitParentAppBenchmark */,
 				7EBDAC341AFD8A200089B815 /* WatchKitParentAppBenchmarkTests */,
 				7EBDAC461AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension */,
@@ -215,6 +234,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		7EBDACEF1AFDABFF0089B815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +289,7 @@
 				7EBDAC411AFD8AC30089B815 /* Sources */,
 				7EBDAC421AFD8AC30089B815 /* Frameworks */,
 				7EBDAC431AFD8AC30089B815 /* Resources */,
+				7EBDACF91AFDAD2B0089B815 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EBDACFB1AFDAD520089B815 /* Cartfile in Resources */,
 				7EBDAC4C1AFD8AC30089B815 /* Images.xcassets in Resources */,
 				7EBDAC501AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app in Resources */,
 			);
@@ -619,6 +648,10 @@
 		7EBDAC621AFD8AC30089B815 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -634,6 +667,10 @@
 		7EBDAC631AFD8AC30089B815 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "WatchKitParentAppBenchmark WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

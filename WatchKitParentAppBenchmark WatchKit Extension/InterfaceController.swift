@@ -1,6 +1,6 @@
 import WatchKit
 import Foundation
-
+import SwiftStatistics
 
 class InterfaceController: WKInterfaceController {
 
