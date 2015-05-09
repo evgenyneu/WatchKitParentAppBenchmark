@@ -14,12 +14,23 @@
                             <fontDescription key="font" type="italicSystem" pointSize="27"/>
                         </label>
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="YYk-va-cOY"/>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="Xx5-R4-5z0"/>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="VRP-hh-etf"/>
                         <button width="1" alignment="left" title="Go!" id="pzv-ZL-X76">
                             <color key="backgroundColor" red="0.80752766279999999" green="0.21965335550000001" blue="0.97889046719999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="onGetTimeTapped" destination="AgC-eL-Hgc" id="U0Q-UZ-PP6"/>
+                            </connections>
                         </button>
                         <group width="1" height="10" alignment="left" id="S3l-Sp-8ZM"/>
                         <label width="1" alignment="left" text="The demo measures time it takes for the WatchKit extension to receive data from the main app." textAlignment="center" numberOfLines="0" id="OAQ-hs-94u"/>
                     </items>
+                    <connections>
+                        <outlet property="label" destination="8RU-BM-ArR" id="JMn-Nr-XUf"/>
+                        <outlet property="labelAverage" destination="Xx5-R4-5z0" id="b3H-gg-XA1"/>
+                        <outlet property="labelDeviation" destination="VRP-hh-etf" id="0dP-Yw-yQg"/>
+                        <outlet property="labelPerformance" destination="YYk-va-cOY" id="WVL-tz-tWu"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
