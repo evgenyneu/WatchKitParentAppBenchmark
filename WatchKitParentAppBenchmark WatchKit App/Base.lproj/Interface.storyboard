@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7703" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchKitParentAppBenchmark_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="8RU-BM-ArR">
+                            <fontDescription key="font" type="italicSystem" pointSize="27"/>
+                        </label>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" id="YYk-va-cOY"/>
+                        <button width="1" alignment="left" title="Go!" id="pzv-ZL-X76">
+                            <color key="backgroundColor" red="0.80752766279999999" green="0.21965335550000001" blue="0.97889046719999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <group width="1" height="10" alignment="left" id="S3l-Sp-8ZM"/>
+                        <label width="1" alignment="left" text="The demo measures time it takes for the WatchKit extension to receive data from the main app." textAlignment="center" numberOfLines="0" id="OAQ-hs-94u"/>
+                    </items>
+                </controller>
             </objects>
         </scene>
     </scenes>
