@@ -46,19 +46,17 @@ class InterfaceController: WKInterfaceController {
     saveTiming(timeElapsed)
     let elapsedFormatted = String(format: "%.1f ms", timeElapsed)
     
-    let average = Statistics.average(timingsSinceFirst)
-    let averageFormated = average == 0 ? " " : String(format: "Average: %.1f ms", average)
-    
-    let standardDeviation = Statistics.standardDeviation(timingsSinceFirst)
-    
-    let standardDeviationFormatted = standardDeviation == 0 ? " " :
-      String(format: "Deviation: %.1f ms", standardDeviation)
-
-    
-    labelPerformance.setText(elapsedFormatted)
-    labelAverage.setText(averageFormated)
-    labelDeviation.setText(standardDeviationFormatted)
-
+    if let average = Statistics.average(timingsSinceFirst) {
+      let averageFormated = average == 0 ? " " : String(format: "Average: %.1f ms", average)
+      
+      if let standardDeviation = Statistics.standardDeviationPopulation(timingsSinceFirst) {
+        let standardDeviationFormatted = String(format: "Deviation: %.1f ms", standardDeviation)
+        labelDeviation.setText(standardDeviationFormatted)
+      }
+      
+      labelPerformance.setText(elapsedFormatted)
+      labelAverage.setText(averageFormated)
+    }
   }
   
   private func saveTiming(timeElapsed: Double) {
