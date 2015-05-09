@@ -21,7 +21,6 @@
 		7EBDAC5D1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EBDAC451AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7EBDAC661AFD8BEC0089B815 /* WatchkitCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC651AFD8BEC0089B815 /* WatchkitCommunicator.swift */; };
 		7EBDAC691AFD8E200089B815 /* TickTock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC681AFD8E200089B815 /* TickTock.swift */; };
-		7EBDAC6B1AFD9BFD0089B815 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC6A1AFD9BFD0089B815 /* Statistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,7 +82,6 @@
 		7EBDAC591AFD8AC30089B815 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7EBDAC651AFD8BEC0089B815 /* WatchkitCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchkitCommunicator.swift; sourceTree = "<group>"; };
 		7EBDAC681AFD8E200089B815 /* TickTock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickTock.swift; sourceTree = "<group>"; };
-		7EBDAC6A1AFD9BFD0089B815 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				7EBDAC681AFD8E200089B815 /* TickTock.swift */,
-				7EBDAC6A1AFD9BFD0089B815 /* Statistics.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 			files = (
 				7EBDAC4A1AFD8AC30089B815 /* InterfaceController.swift in Sources */,
 				7EBDAC691AFD8E200089B815 /* TickTock.swift in Sources */,
-				7EBDAC6B1AFD9BFD0089B815 /* Statistics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
