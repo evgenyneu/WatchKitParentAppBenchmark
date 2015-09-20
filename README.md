@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
 ## How to send a message from WatchKit to iOS app
 
-1) In your **WaitchKit extension**: call `sendMessage` of `WCSession` object supplying the data to be sent to the iOS app. You can supply a closure in `replyHandler` parameter if you need to process the reply from the iOS app.
+1) In your **WaitchKit extension**: call `sendMessage` of `WCSession` object supplying the data to be sent to the iOS app. You can supply a closure in `replyHandler` parameter if you want to process the reply from the iOS app.
 
 ```Swift
 if WCSession.isSupported() {
