@@ -1,19 +1,20 @@
-//
-// Reply to WatchKit extension with a dictionary.
-//
-
 import Foundation
 
+///
+/// Reply to WatchKit extension with a dictionary.
+///
 struct WatchkitCommunicator {
   static let animals = "🐨🐱🐀🐛🐋🐢🐌🐮🐗"
   
-  //
-  // Returns a dictionary with key "hi" and the value being a random animal emoji
-  //
-  // Example:
-  //    ["hi": "🐛"]
-  //
-  static func reply(reply: (([NSObject : AnyObject]!) -> Void)!) {
+  /**
+  
+  Returns a dictionary with key "hi" and the value being a random animal emoji
+
+  Example:
+  
+      ["hi": "🐛"]
+  */
+  static func reply(reply: (([String : AnyObject]) -> Void)) {
     let data = ["hi": "\(randomAnimal)"]
     reply(data)
   }

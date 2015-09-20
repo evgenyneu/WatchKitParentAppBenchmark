@@ -1,8 +1,9 @@
 import WatchKit
 import Foundation
 import SigmaSwiftStatistics
+import WatchConnectivity
 
-class InterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController, WCSessionDelegate {
 
   @IBOutlet weak var label: WKInterfaceLabel!
   @IBOutlet weak var labelPerformance: WKInterfaceLabel!
@@ -24,22 +25,28 @@ class InterfaceController: WKInterfaceController {
   override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
-  }
-  
-  override func didDeactivate() {
-    // This method is called when watch view controller is no longer visible
-    super.didDeactivate()
+    
+    if WCSession.isSupported() {
+      let session = WCSession.defaultSession()
+      session.delegate = self
+      session.activateSession()
+    }
   }
   
   private func getDataFromParentApp(onReply: ()->()) {
-//    WKInterfaceController.openParentApplication([:]) { reply, error in
-//      
-//      if let reply = reply as? [String: String] {
-//        self.label.setText(reply["hi"])
-//      }
-//      
-//      onReply()
-//    }
+    if WCSession.isSupported() {
+      let session = WCSession.defaultSession()
+      
+      session.sendMessage([:], replyHandler: { reply in
+        if let reply = reply as? [String: String] {
+          self.label.setText(reply["hi"])
+        }
+  
+        onReply()
+      
+      }, errorHandler: nil)
+    }
+
   }
   
   private func showTiming(timeElapsed: Double) {
