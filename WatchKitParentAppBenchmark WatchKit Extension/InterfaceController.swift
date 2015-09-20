@@ -1,6 +1,5 @@
 import WatchKit
 import Foundation
-import SigmaSwiftStatistics
 import WatchConnectivity
 
 class InterfaceController: WKInterfaceController {
