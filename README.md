@@ -4,7 +4,7 @@ This is a demo iOS app that shows how to send a message from WatchKit extension 
 
 ## How to setup connectivity between Apple Watch and iOS device
 
-1) In your **WatchKit extension delegate**: activate activate watch connectivity session.
+1) In your **WatchKit extension delegate**: activate connectivity session.
 
 ```Swift
 import WatchConnectivity
