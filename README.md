@@ -61,7 +61,7 @@ if WCSession.isSupported() {
 }
 ```
 
-2) In your **iOS app delegate**: implement `session didReceiveMessage` method
+2) In your **iOS app delegate**: implement `session didReceiveMessage` method where you can handle the message from the watch and send an optional reply back to it.
 
 
 ```Swift
@@ -72,7 +72,7 @@ func session(session: WCSession, didReceiveMessage message: [String : AnyObject]
 
   // 2. Send a reply (optional)
 
-  let replyMessage = ["plan":"🌵"]
+  let replyMessage = ["plant":"🌵"]
   replyHandler(replyMessage)
 }
 ```
