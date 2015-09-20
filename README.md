@@ -7,16 +7,17 @@ This is a demo iOS app that shows how to send a message from WatchKit extension 
 1) In your **WatchKit extension delegate**: activate connectivity session.
 
 ```Swift
+import WatchKit
 import WatchConnectivity
 
-...
-
-func applicationDidFinishLaunching() {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+  func applicationDidFinishLaunching() {
     if WCSession.isSupported() {
       let session = WCSession.defaultSession()
       session.delegate = self
       session.activateSession()
     }
+  }
 }
 ```
 
