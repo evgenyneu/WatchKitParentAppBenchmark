@@ -68,4 +68,9 @@ class InterfaceController: WKInterfaceController {
       self?.showTiming(tick.measure())
     }
   }
+  
+  @IBAction func didTapResetButton() {
+    numberOfMeasuresAfterFirstOne = -1
+    timingsSinceFirst = []
+  }
 }

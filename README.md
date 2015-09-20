@@ -84,7 +84,7 @@ How much time does it take for a WatchKit extension to receive data back from th
 
 ### Answer
 
-About 50 ms.
+About 300 ms.
 
 <br>
 

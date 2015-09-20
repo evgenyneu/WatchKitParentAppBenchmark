@@ -22,6 +22,12 @@
                                 <action selector="onGetTimeTapped" destination="AgC-eL-Hgc" id="U0Q-UZ-PP6"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Reset" id="Y44-gW-l0P">
+                            <color key="backgroundColor" red="0.39607843139999999" green="0.41568627450000001" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="didTapResetButton" destination="AgC-eL-Hgc" id="rgd-f4-NaH"/>
+                            </connections>
+                        </button>
                         <group width="1" height="10" alignment="left" id="S3l-Sp-8ZM"/>
                         <label width="1" alignment="left" textAlignment="center" numberOfLines="0" id="OAQ-hs-94u">
                             <string key="text">The demo measures time it takes for the WatchKit extension to receive data from the main app using sendMessage method of WCSession.</string>
