@@ -15,10 +15,8 @@ class InterfaceController: WKInterfaceController {
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
-    label.setText(" ")
-    labelPerformance.setText(" ")
-    labelAverage.setText(" ")
-    labelDeviation.setText(" ")
+    resetBenchmark()
+    measure()
   }
   
   private func getDataFromParentApp(onReply: ()->()) {
@@ -41,7 +39,7 @@ class InterfaceController: WKInterfaceController {
     let elapsedFormatted = String(format: "%.1f ms", timeElapsed)
     
     if let average = Sigma.average(timingsSinceFirst) {
-      let averageFormated = average == 0 ? " " : String(format: "Average: %.1f ms", average)
+      let averageFormated = average == 0 ? " " : formatAverage(average)
       
       if let standardDeviation = Sigma.standardDeviationPopulation(timingsSinceFirst) {
         let standardDeviationFormatted = String(format: "Deviation: %.1f ms", standardDeviation)
@@ -50,7 +48,13 @@ class InterfaceController: WKInterfaceController {
       
       labelPerformance.setText(elapsedFormatted)
       labelAverage.setText(averageFormated)
+    } else {
+      labelAverage.setText(elapsedFormatted)
     }
+  }
+  
+  private func formatAverage(time: Double) -> String {
+    return String(format: "Average: %.1f ms", time)
   }
   
   private func saveTiming(timeElapsed: Double) {
@@ -62,15 +66,27 @@ class InterfaceController: WKInterfaceController {
     timingsSinceFirst.append(timeElapsed)
   }
   
-  @IBAction func onGetTimeTapped() {
+  private func resetBenchmark() {
+    label.setText(" ")
+    labelPerformance.setText(" ")
+    labelAverage.setText(" ")
+    labelDeviation.setText(" ")
+    numberOfMeasuresAfterFirstOne = -1
+    timingsSinceFirst = []
+  }
+  
+  private func measure() {
     let tick = TickTock()
     getDataFromParentApp { [weak self] in
       self?.showTiming(tick.measure())
     }
   }
   
+  @IBAction func onGetTimeTapped() {
+    measure()
+  }
+  
   @IBAction func didTapResetButton() {
-    numberOfMeasuresAfterFirstOne = -1
-    timingsSinceFirst = []
+    resetBenchmark()
   }
 }

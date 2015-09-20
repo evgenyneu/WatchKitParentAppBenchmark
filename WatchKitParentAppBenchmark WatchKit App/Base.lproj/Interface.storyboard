@@ -16,7 +16,7 @@
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="YYk-va-cOY"/>
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="Xx5-R4-5z0"/>
                         <label width="1" alignment="center" text="Label" textAlignment="center" id="VRP-hh-etf"/>
-                        <button width="1" alignment="left" title="Go!" id="pzv-ZL-X76">
+                        <button width="1" alignment="left" title="Measure" id="pzv-ZL-X76">
                             <color key="backgroundColor" red="0.80752766279999999" green="0.21965335550000001" blue="0.97889046719999995" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="onGetTimeTapped" destination="AgC-eL-Hgc" id="U0Q-UZ-PP6"/>
