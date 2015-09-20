@@ -1,6 +1,6 @@
 import WatchKit
 import Foundation
-import SwiftStatistics
+import SigmaSwiftStatistics
 
 class InterfaceController: WKInterfaceController {
 
@@ -32,24 +32,24 @@ class InterfaceController: WKInterfaceController {
   }
   
   private func getDataFromParentApp(onReply: ()->()) {
-    WKInterfaceController.openParentApplication([:]) { reply, error in
-      
-      if let reply = reply as? [String: String] {
-        self.label.setText(reply["hi"])
-      }
-      
-      onReply()
-    }
+//    WKInterfaceController.openParentApplication([:]) { reply, error in
+//      
+//      if let reply = reply as? [String: String] {
+//        self.label.setText(reply["hi"])
+//      }
+//      
+//      onReply()
+//    }
   }
   
   private func showTiming(timeElapsed: Double) {
     saveTiming(timeElapsed)
     let elapsedFormatted = String(format: "%.1f ms", timeElapsed)
     
-    if let average = Statistics.average(timingsSinceFirst) {
+    if let average = Sigma.average(timingsSinceFirst) {
       let averageFormated = average == 0 ? " " : String(format: "Average: %.1f ms", average)
       
-      if let standardDeviation = Statistics.standardDeviationPopulation(timingsSinceFirst) {
+      if let standardDeviation = Sigma.standardDeviationPopulation(timingsSinceFirst) {
         let standardDeviationFormatted = String(format: "Deviation: %.1f ms", standardDeviation)
         labelDeviation.setText(standardDeviationFormatted)
       }

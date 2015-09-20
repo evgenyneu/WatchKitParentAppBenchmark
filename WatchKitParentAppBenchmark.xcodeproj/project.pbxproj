@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E1F46511BAE848F001E2164 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EBDAC451AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E1F46541BAE848F001E2164 /* WatchKitParentAppBenchmark WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7EBDAC4F1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app */; };
+		7E5D2EFA1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */; };
+		7E5D2EFB1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EBDAC221AFD8A200089B815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC211AFD8A200089B815 /* AppDelegate.swift */; };
 		7EBDAC241AFD8A200089B815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC231AFD8A200089B815 /* ViewController.swift */; };
 		7EBDAC271AFD8A200089B815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC251AFD8A200089B815 /* Main.storyboard */; };
@@ -15,18 +19,28 @@
 		7EBDAC381AFD8A200089B815 /* WatchKitParentAppBenchmarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC371AFD8A200089B815 /* WatchKitParentAppBenchmarkTests.swift */; };
 		7EBDAC4A1AFD8AC30089B815 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC491AFD8AC30089B815 /* InterfaceController.swift */; };
 		7EBDAC4C1AFD8AC30089B815 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC4B1AFD8AC30089B815 /* Images.xcassets */; };
-		7EBDAC501AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC4F1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app */; };
 		7EBDAC581AFD8AC30089B815 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC561AFD8AC30089B815 /* Interface.storyboard */; };
 		7EBDAC5A1AFD8AC30089B815 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC591AFD8AC30089B815 /* Images.xcassets */; };
-		7EBDAC5D1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EBDAC451AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7EBDAC661AFD8BEC0089B815 /* WatchkitCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC651AFD8BEC0089B815 /* WatchkitCommunicator.swift */; };
 		7EBDAC691AFD8E200089B815 /* TickTock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC681AFD8E200089B815 /* TickTock.swift */; };
-		7EBDACF61AFDACEE0089B815 /* SwiftStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */; };
-		7EBDACF81AFDAD2B0089B815 /* SwiftStatistics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7EBDACF01AFDAC0C0089B815 /* SwiftStatistics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7EBDACFB1AFDAD520089B815 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDACFA1AFDAD520089B815 /* Cartfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7E1F464F1BAE848F001E2164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EBDAC141AFD8A200089B815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EBDAC441AFD8AC30089B815;
+			remoteInfo = "WatchKitParentAppBenchmark WatchKit Extension";
+		};
+		7E1F46521BAE848F001E2164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EBDAC141AFD8A200089B815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EBDAC4E1AFD8AC30089B815;
+			remoteInfo = "WatchKitParentAppBenchmark WatchKit App";
+		};
 		7EBDAC321AFD8A200089B815 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7EBDAC141AFD8A200089B815 /* Project object */;
@@ -34,41 +48,38 @@
 			remoteGlobalIDString = 7EBDAC1B1AFD8A200089B815;
 			remoteInfo = WatchKitParentAppBenchmark;
 		};
-		7EBDAC511AFD8AC30089B815 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EBDAC141AFD8A200089B815 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EBDAC4E1AFD8AC30089B815;
-			remoteInfo = "WatchKitParentAppBenchmark WatchKit App";
-		};
-		7EBDAC5B1AFD8AC30089B815 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EBDAC141AFD8A200089B815 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7EBDAC441AFD8AC30089B815;
-			remoteInfo = "WatchKitParentAppBenchmark WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7EBDAC641AFD8AC30089B815 /* Embed App Extensions */ = {
+		7E1F46551BAE848F001E2164 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7EBDAC5D1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */,
+				7E1F46511BAE848F001E2164 /* WatchKitParentAppBenchmark WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7EBDACF91AFDAD2B0089B815 /* Embed Frameworks */ = {
+		7E1F46561BAE848F001E2164 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7E1F46541BAE848F001E2164 /* WatchKitParentAppBenchmark WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E5D2EFC1BAE89BA00ED2E9A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7EBDACF81AFDAD2B0089B815 /* SwiftStatistics.framework in Embed Frameworks */,
+				7E5D2EFB1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SigmaSwiftStatistics.framework; path = Carthage/Build/watchOS/SigmaSwiftStatistics.framework; sourceTree = "<group>"; };
 		7EBDAC1C1AFD8A200089B815 /* WatchKitParentAppBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitParentAppBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBDAC201AFD8A200089B815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EBDAC211AFD8A200089B815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EBDACF61AFDACEE0089B815 /* SwiftStatistics.framework in Frameworks */,
+				7E5D2EFA1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +141,7 @@
 		7EBDAC131AFD8A200089B815 = {
 			isa = PBXGroup;
 			children = (
+				7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */,
 				7EBDACFA1AFDAD520089B815 /* Cartfile */,
 				7EBDACEF1AFDABFF0089B815 /* Frameworks */,
 				7EBDAC1E1AFD8A200089B815 /* WatchKitParentAppBenchmark */,
@@ -252,12 +265,12 @@
 				7EBDAC181AFD8A200089B815 /* Sources */,
 				7EBDAC191AFD8A200089B815 /* Frameworks */,
 				7EBDAC1A1AFD8A200089B815 /* Resources */,
-				7EBDAC641AFD8AC30089B815 /* Embed App Extensions */,
+				7E1F46561BAE848F001E2164 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7EBDAC5C1AFD8AC30089B815 /* PBXTargetDependency */,
+				7E1F46531BAE848F001E2164 /* PBXTargetDependency */,
 			);
 			name = WatchKitParentAppBenchmark;
 			productName = WatchKitParentAppBenchmark;
@@ -289,32 +302,33 @@
 				7EBDAC411AFD8AC30089B815 /* Sources */,
 				7EBDAC421AFD8AC30089B815 /* Frameworks */,
 				7EBDAC431AFD8AC30089B815 /* Resources */,
-				7EBDACF91AFDAD2B0089B815 /* Embed Frameworks */,
+				7E5D2EFC1BAE89BA00ED2E9A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7EBDAC521AFD8AC30089B815 /* PBXTargetDependency */,
 			);
 			name = "WatchKitParentAppBenchmark WatchKit Extension";
 			productName = "WatchKitParentAppBenchmark WatchKit Extension";
 			productReference = 7EBDAC451AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 		7EBDAC4E1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EBDAC5E1AFD8AC30089B815 /* Build configuration list for PBXNativeTarget "WatchKitParentAppBenchmark WatchKit App" */;
 			buildPhases = (
 				7EBDAC4D1AFD8AC30089B815 /* Resources */,
+				7E1F46551BAE848F001E2164 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E1F46501BAE848F001E2164 /* PBXTargetDependency */,
 			);
 			name = "WatchKitParentAppBenchmark WatchKit App";
 			productName = "WatchKitParentAppBenchmark WatchKit App";
 			productReference = 7EBDAC4F1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
+			productType = "com.apple.product-type.application.watchapp2";
 		};
 /* End PBXNativeTarget section */
 
@@ -324,7 +338,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Evgenii Neumerzhitckii";
 				TargetAttributes = {
 					7EBDAC1B1AFD8A200089B815 = {
@@ -387,7 +401,6 @@
 			files = (
 				7EBDACFB1AFDAD520089B815 /* Cartfile in Resources */,
 				7EBDAC4C1AFD8AC30089B815 /* Images.xcassets in Resources */,
-				7EBDAC501AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,20 +446,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7E1F46501BAE848F001E2164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EBDAC441AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension */;
+			targetProxy = 7E1F464F1BAE848F001E2164 /* PBXContainerItemProxy */;
+		};
+		7E1F46531BAE848F001E2164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EBDAC4E1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App */;
+			targetProxy = 7E1F46521BAE848F001E2164 /* PBXContainerItemProxy */;
+		};
 		7EBDAC331AFD8A200089B815 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7EBDAC1B1AFD8A200089B815 /* WatchKitParentAppBenchmark */;
 			targetProxy = 7EBDAC321AFD8A200089B815 /* PBXContainerItemProxy */;
-		};
-		7EBDAC521AFD8AC30089B815 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EBDAC4E1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App */;
-			targetProxy = 7EBDAC511AFD8AC30089B815 /* PBXContainerItemProxy */;
-		};
-		7EBDAC5C1AFD8AC30089B815 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7EBDAC441AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit Extension */;
-			targetProxy = 7EBDAC5B1AFD8AC30089B815 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -499,6 +512,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -567,6 +581,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitParentAppBenchmark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evgenii.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -577,6 +592,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WatchKitParentAppBenchmark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evgenii.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -585,16 +601,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = WatchKitParentAppBenchmarkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evgenii.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitParentAppBenchmark.app/WatchKitParentAppBenchmark";
 			};
@@ -604,12 +617,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = WatchKitParentAppBenchmarkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.evgenii.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchKitParentAppBenchmark.app/WatchKitParentAppBenchmark";
 			};
@@ -619,17 +629,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				IBSC_MODULE = WatchKitParentAppBenchmark_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchKitParentAppBenchmark WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.WatchKitParentAppBenchmark.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -637,13 +649,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = WatchKitParentAppBenchmark_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchKitParentAppBenchmark WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.WatchKitParentAppBenchmark.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -652,7 +666,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -661,8 +675,12 @@
 				INFOPLIST_FILE = "WatchKitParentAppBenchmark WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.WatchKitParentAppBenchmark.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -671,13 +689,17 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
 				INFOPLIST_FILE = "WatchKitParentAppBenchmark WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evgenii.WatchKitParentAppBenchmark.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
