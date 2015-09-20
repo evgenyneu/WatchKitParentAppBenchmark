@@ -322,6 +322,8 @@
 		7EBDAC141AFD8A200089B815 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Evgenii Neumerzhitckii";
 				TargetAttributes = {
@@ -698,6 +700,7 @@
 				7EBDAC3D1AFD8A200089B815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EBDAC3E1AFD8A200089B815 /* Build configuration list for PBXNativeTarget "WatchKitParentAppBenchmarkTests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +709,7 @@
 				7EBDAC401AFD8A200089B815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EBDAC5E1AFD8AC30089B815 /* Build configuration list for PBXNativeTarget "WatchKitParentAppBenchmark WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +718,7 @@
 				7EBDAC601AFD8AC30089B815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EBDAC611AFD8AC30089B815 /* Build configuration list for PBXNativeTarget "WatchKitParentAppBenchmark WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +727,7 @@
 				7EBDAC631AFD8AC30089B815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

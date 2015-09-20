@@ -19,8 +19,8 @@ struct WatchkitCommunicator {
   }
   
   private static var randomAnimal: String {
-    let randomIndex = Int(arc4random_uniform(UInt32(count(animals))))
-    return String(animals[advance(animals.startIndex, randomIndex)])
+    let randomIndex = Int(arc4random_uniform(UInt32(animals.characters.count)))
+    return String(animals[animals.startIndex.advancedBy(randomIndex)])
   }
   
   private static var currentTime: String {

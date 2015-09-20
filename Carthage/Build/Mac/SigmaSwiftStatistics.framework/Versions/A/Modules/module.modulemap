@@ -1,0 +1,3 @@
+framework module SigmaSwiftStatistics {
+    header "SigmaSwiftStatistics-Swift.h"
+}

@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(application: UIApplication,
     handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
-    reply: (([NSObject : AnyObject]!) -> Void)!) {
+    reply: (([NSObject : AnyObject]?) -> Void)) {
       
     WatchkitCommunicator.reply(reply)
   }

@@ -33,6 +33,6 @@ public class TickTock {
   }
 
   public func output() {
-    println(formattedWithMs())
+    print(formattedWithMs())
   }
 }
