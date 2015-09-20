@@ -27,7 +27,10 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
 import UIKit
 import WatchConnectivity
 
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
+  var window: UIWindow?
+
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     if WCSession.isSupported() {
       let session = WCSession.defaultSession()
