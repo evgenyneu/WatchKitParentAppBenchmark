@@ -11,6 +11,7 @@
 		7E1F46541BAE848F001E2164 /* WatchKitParentAppBenchmark WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7EBDAC4F1AFD8AC30089B815 /* WatchKitParentAppBenchmark WatchKit App.app */; };
 		7E5D2EFA1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */; };
 		7E5D2EFB1BAE89B900ED2E9A /* SigmaSwiftStatistics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7E5D2F421BAEA1E700ED2E9A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5D2F411BAEA1E700ED2E9A /* ExtensionDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		7EBDAC221AFD8A200089B815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC211AFD8A200089B815 /* AppDelegate.swift */; };
 		7EBDAC241AFD8A200089B815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAC231AFD8A200089B815 /* ViewController.swift */; };
 		7EBDAC271AFD8A200089B815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDAC251AFD8A200089B815 /* Main.storyboard */; };
@@ -88,6 +89,7 @@
 
 /* Begin PBXFileReference section */
 		7E5D2EF91BAE89B900ED2E9A /* SigmaSwiftStatistics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SigmaSwiftStatistics.framework; path = Carthage/Build/watchOS/SigmaSwiftStatistics.framework; sourceTree = "<group>"; };
+		7E5D2F411BAEA1E700ED2E9A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		7EBDAC1C1AFD8A200089B815 /* WatchKitParentAppBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchKitParentAppBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EBDAC201AFD8A200089B815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EBDAC211AFD8A200089B815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			children = (
 				7EBDAC671AFD8E170089B815 /* Utils */,
 				7EBDAC491AFD8AC30089B815 /* InterfaceController.swift */,
+				7E5D2F411BAEA1E700ED2E9A /* ExtensionDelegate.swift */,
 				7EBDAC4B1AFD8AC30089B815 /* Images.xcassets */,
 				7EBDAC471AFD8AC30089B815 /* Supporting Files */,
 			);
@@ -440,6 +443,7 @@
 			files = (
 				7EBDAC4A1AFD8AC30089B815 /* InterfaceController.swift in Sources */,
 				7EBDAC691AFD8E200089B815 /* TickTock.swift in Sources */,
+				7E5D2F421BAEA1E700ED2E9A /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

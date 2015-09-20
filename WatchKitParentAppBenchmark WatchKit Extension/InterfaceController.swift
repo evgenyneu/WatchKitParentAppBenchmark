@@ -3,7 +3,7 @@ import Foundation
 import SigmaSwiftStatistics
 import WatchConnectivity
 
-class InterfaceController: WKInterfaceController, WCSessionDelegate {
+class InterfaceController: WKInterfaceController {
 
   @IBOutlet weak var label: WKInterfaceLabel!
   @IBOutlet weak var labelPerformance: WKInterfaceLabel!
@@ -20,17 +20,6 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     labelPerformance.setText(" ")
     labelAverage.setText(" ")
     labelDeviation.setText(" ")
-  }
-  
-  override func willActivate() {
-    // This method is called when watch view controller is about to be visible to user
-    super.willActivate()
-    
-    if WCSession.isSupported() {
-      let session = WCSession.defaultSession()
-      session.delegate = self
-      session.activateSession()
-    }
   }
   
   private func getDataFromParentApp(onReply: ()->()) {
