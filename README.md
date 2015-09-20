@@ -88,5 +88,5 @@ About 300 ms.
 
 <br>
 
-<img src='https://raw.githubusercontent.com/evgenyneu/WatchKitParentAppBenchmark/master/Graphics/watchkit_extension_to_parent_app_benchmark.png' alt='WatchKit extension to main app communication time' width='300'>
+<img src='https://raw.githubusercontent.com/evgenyneu/WatchKitParentAppBenchmark/master/Graphics/watchkit_extension_to_parent_app_benchmark_1.png' alt='WatchKit extension to main app communication time' width='300'>
 
