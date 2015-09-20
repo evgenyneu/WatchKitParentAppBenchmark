@@ -1,4 +1,5 @@
 import Foundation
+import WatchConnectivity
 
 ///
 /// Reply to WatchKit extension with a dictionary.

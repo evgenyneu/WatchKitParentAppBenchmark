@@ -26,7 +26,7 @@ class InterfaceController: WKInterfaceController {
     if WCSession.isSupported() {
       let session = WCSession.defaultSession()
       
-      session.sendMessage([:], replyHandler: { reply in
+      session.sendMessage(["my key":"my value"], replyHandler: { reply in
         if let reply = reply as? [String: String] {
           self.label.setText(reply["hi"])
         }
@@ -35,7 +35,6 @@ class InterfaceController: WKInterfaceController {
       
       }, errorHandler: nil)
     }
-
   }
   
   private func showTiming(timeElapsed: Double) {

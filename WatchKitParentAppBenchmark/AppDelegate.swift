@@ -6,14 +6,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
   
   var window: UIWindow?
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {    
+  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    // Activate watch connectivity session when application launches on iOS device
+    activateWatchConnectivity()
+    
+    return true
+  }
+  
+  private func activateWatchConnectivity() {
     if WCSession.isSupported() {
       let session = WCSession.defaultSession()
       session.delegate = self
       session.activateSession()
     }
-    
-    return true
   }
   
   // MARK: - WCSessionDelegate
